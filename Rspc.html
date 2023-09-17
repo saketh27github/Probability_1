@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retailer Selling Price Calculator</title>
+    <!-- Linking Montserrat font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Setting Montserrat as the default font for the body and other base styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f7f8fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        button, input {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<h2>Retailer Selling Price Calculator</h2>
+<form id="inputForm" onsubmit="event.preventDefault(); calculateAndDisplay();">
+    Cost Price (₹): <input type="number" id="costPrice" placeholder="Enter Cost Price" required><br>
+    Profit Percentage (%): <input type="number" id="profitPercentage" placeholder="Enter Profit Percentage" required><br>
+    Discount Percentage (%): <input type="number" id="discountPercentage" placeholder="Enter Discount Percentage" required><br>
+    Years: <input type="number" id="years" placeholder="Enter Number of Years" required><br>
+    <button type="submit">Calculate Selling Details</button>
+</form>
+
+<h3>Results:</h3>
+<div id="results"></div>
+
+<script src="Rspc.js"></script>
+
+</body>
+</html>

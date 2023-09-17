@@ -1,0 +1,101 @@
+/* Base styles and mobile-first design */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    /* display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+}
+
+input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Desktop styles using a media query */
+@media (min-width: 768px) { /* Standard breakpoint for tablets and up */
+    .container {
+        padding: 40px;
+        width: 60%;
+        max-width: 500px; /* Ensuring it doesn't get too wide on large screens */
+    }
+
+    input[type="number"], input[type="submit"] {
+        width: 80%; /* Make input fields narrower for aesthetic purposes */
+        margin-left: 10%; /* Centering the narrower input fields */
+        margin-right: 10%; /* Centering the narrower input fields */
+    }
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}

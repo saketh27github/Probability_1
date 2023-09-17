@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markup Calculator</title>
+    <!-- Linking Montserrat font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Setting Montserrat as the default font for the body */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f7f8fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        input[type="number"], input[type="submit"] {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 80%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<h2>Markup Calculator</h2>
+
+<form id="markupForm">
+    Cost Price (₹): <input type="number" id="costPrice" value=""><br><br>
+    Desired Profit Percentage (%): <input type="number" id="profitPercentage" value=""><br><br>
+    Discount Percentage (%): <input type="number" id="discountPercentage" value=""><br><br>
+    <input type="submit" value="Calculate">
+</form>
+
+<h3>Results:</h3>
+<div id="results"></div>
+
+<script src="mc.js"></script> <!-- Linking the external JS file -->
+
+</body>
+</html>

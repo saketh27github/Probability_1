@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+    <!-- Add link to Google Font for Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            background-color: blue;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 2px;
+            transition-duration: 0.4s;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2>Price Calculation</h2>
+    <form id="priceForm">
+        Cost Price (₹): <input type="number" id="costPrice"><br>
+        Profit Percentage (%): <input type="number" id="profitPercentage"><br>
+        Discount Percentage (%): <input type="number" id="discountPercentage"><br>
+        Sales Tax Percentage (%): <input type="number" id="salesTax"><br>
+        <button type="button" onclick="calculatePrice()">Calculate Price</button>
+    </form>
+    <div id="results"></div>
+
+    <script src="sales.js"></script>
+</body>
+</html>
